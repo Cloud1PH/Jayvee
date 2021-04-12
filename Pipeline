@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'Ubuntu18latest', credentialsId: 'Github', url: 'https://github.com/Cloud1PH/Jayvee.git'
+                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/Cloud1PH/Jayvee.git'
             }
         }
         stage('Copy Provider') {
